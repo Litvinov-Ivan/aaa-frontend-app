@@ -27,6 +27,7 @@ class IndexView(View):
                         "image": cropped_img_b64,
                         "word": word,
                         "accuracy": accuracy,
+                        "accuracy_str": f"{accuracy * 100:.2f}"
                     }
                 )
             image_b64 = image_to_img_src(draw.get_highlighted_image())
